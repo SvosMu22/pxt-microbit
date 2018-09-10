@@ -1,25 +1,29 @@
-# Simulator
+from microbit import*
 
-The JavaScript simulator allows to test and execute most BBC micro:bit programs in the browser.
-It allows to emulate sensor data or user interactions.
+while True:
+    ABJK1 = Image("09990:09999:99990:09999:09990")
 
-```sim
-input.onButtonPressed(Button.A, () => {
-   basic.showString("A");
-});
-input.onButtonPressed(Button.B, () => {
-   basic.showString("B");
-});
-input.onPinPressed(TouchPin.P0, () => {
-   basic.showString("0");
-});
-input.onPinPressed(TouchPin.P1, () => {
-   basic.showString("1");
-});
-input.onPinPressed(TouchPin.P2, () => {
-   basic.showString("2");
-});
-input.temperature()
-input.compassHeading()
-input.lightLevel()
+    ABJK2 = Image("00900:09990:99999:09990:00900")
+
+    ABJK3 = Image("09990:09999:99990:09999:09990")
+
+    ABJK4 = Image("00900:09990:99999:09990:00900")
+
+    ABJK5 = Image("09990:09999:99990:09999:09990")
+
+    ABJK6 = Image("00900:09990:99999:09990:00900")
+
+    ABJK7 = Image("09990:09999:99990:09999:09990")
+
+    ABJK8 = Image("00900:09990:99999:09990:00900")
+
+    ABJK9 = Image("09990:09999:99990:09999:09990")
+
+    ABJK10 = Image("00900:09990:99999:09990:00900")
+
+
+
+
+    all_ABJK = [ABJK1, ABJK2, ABJK3, ABJK4, ABJK5, ABJK6, ABJK7, ABJK8, ABJK9, ABJK10]
+    display.show(all_ABJK, delay=100)
 ```
